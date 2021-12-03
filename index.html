@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <title>多边形碰撞检测</title>
+    <style>
+        .componentBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+            margin-bottom: 10px;
+        }
+
+        #poly1Text,
+        #poly2Text {
+            width: 400px;
+        }
+
+        .canvasBox {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="componentBox">
+        <label>多边形1：<input type="text" id="poly1Text" placeholder="分量间使用“,”隔开，点与点间使用空格。示例：3,4  7,8  2,1"></label>
+        <label>多边形2：<input type="text" id="poly2Text" placeholder="分量间使用“,”隔开，点与点间使用空格。示例：3,4  7,8  2,1"></label>
+        <button onclick="calc()">计算</button>
+        <span id="outputText">请在多边形1与多边形2中输入多边形的各点</span>
+    </div>
+    <div class="canvasBox"></div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
